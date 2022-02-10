@@ -1,4 +1,5 @@
 # Map of Scotland showing SIMD data
+## Scottish Index of Multiple Deprivations
 
 <img src="https://user-images.githubusercontent.com/14912609/153426999-f5319d4c-a810-4081-9796-6445ca833f23.png" width="400">
 
