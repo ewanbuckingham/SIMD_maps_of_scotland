@@ -24,5 +24,5 @@ The following datasets are combined to create these plots. Download links are pr
 -   [Total population
     estimates](https://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/population/population-estimates/small-area-population-estimates-2011-data-zone-based/mid-2020)
     for each datazone from National Records of Scotland\
-    Download: `sape-20-all-tabs-and-figs.xlsx` (better context than the
-    .csv)Downloaded 2022/01/07
+    Download: `sape-20-all-tabs-and-figs.xlsx` (better context than the .csv)\
+    Downloaded 2022/01/07
