@@ -1,8 +1,9 @@
-# Versatile map of Scotland showing SIMD data
+# Versatile maps of Scotland showing SIMD data
+
 
 <p align="center"><img src="https://user-images.githubusercontent.com/14912609/153426999-f5319d4c-a810-4081-9796-6445ca833f23.png" width="400"></p>
 
-This script creates static .png renders of Scotland to illustrate
+This R script creates static .png renders of Scotland to illustrate
 socio-economic trends. SIMD (Scottish Index of Multiple Deprivations) is used but it can be easily adapted for any dataset where you have either postcodes or datazones. It can be used for the whole country or subsetted for individual areas.
 
 Other UK regions use different Datazone/LSOA formats and their IMD data also differs slightly however this method works for them all with minimal adjustment.
