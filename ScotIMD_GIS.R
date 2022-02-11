@@ -53,10 +53,20 @@ datazone <- left_join(datazone, postcode_lookup, by=c("DataZone" = "DZ"))
 #postcode_lookup is now in datazone and no longer required as a seperate table.
 rm(postcode_lookup)
 
-#I'm primarily interested in Broadband connection speed, which isn't provided in a numeric format. 
-# The "%" sign needs to be removed and the variable re-typed. The full list of measures available 
-# in the SIMD is explained in its glossary. There's a lot in there.
+# Some of the columns have '%' signs that need to be stripped. The glossary 
+# (or README gives an list of the labels , types and explanations.
+datazone$IncRate <- as.numeric(gsub("\\%", "", datazone$IncRate))
+datazone$EmpRate <- as.numeric(gsub("\\%", "", datazone$EmpRate))
+datazone$IncRate <- as.numeric(gsub("\\%", "", datazone$IncRate))
+datazone$HlthDprsPc <- as.numeric(gsub("\\%", "", datazone$HlthDprsPc))
+datazone$HlthLBWTPc <- as.numeric(gsub("\\%", "", datazone$HlthLBWTPc))
+datazone$EduAttend <- as.numeric(gsub("\\%", "", datazone$EduAttend))
+datazone$EduPartici <- as.numeric(gsub("\\%", "", datazone$EduPartici))
+datazone$EduUniver <- as.numeric(gsub("\\%", "", datazone$EduUniver))
+datazone$IncRate <- as.numeric(gsub("\\%", "", datazone$IncRate))
 datazone$GAccBrdbnd <- as.numeric(gsub("\\%", "", datazone$GAccBrdbnd))
+datazone$HouseOCrat <- as.numeric(gsub("\\%", "", datazone$HouseOCrat))
+datazone$HouseNCrat <- as.numeric(gsub("\\%", "", datazone$HouseNCrat))
 
 # Visualise the distribution of IMD deciles across Scotland
 # -------------------------------------------------------------------------
